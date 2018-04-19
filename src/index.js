@@ -10,7 +10,7 @@ import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 
 import './style/base.css'
-
+import 'antd/dist/antd.css'
 // FastClick.attach(document.body);
 
 // ReactDOM.render(<App />, document.getElementById('root'));
