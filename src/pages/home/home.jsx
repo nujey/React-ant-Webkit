@@ -5,7 +5,9 @@ import './home.scss'
 class Home extends React.Component {
   render() {
     return(
-      <main className='home-main'>1111</main>
+      <main className='home-main'>
+        <header className="home-header">欢迎来到缇蜜之家</header>
+      </main>
     )
   }
 }
