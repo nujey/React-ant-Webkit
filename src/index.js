@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Route from './router/';
+import Store from './store/store';
 // 处理移动端点击延迟300ms的问题
 // import FastClick from 'fastclick'
 // import App from './App';
@@ -16,7 +17,7 @@ import './style/base.css'
 const render = Component => {
   ReactDOM.render(
     // 绑定dedux\热加载
-    <Provider>
+    <Provider store={Store}>
       <AppContainer>
         <Component />
       </AppContainer>
