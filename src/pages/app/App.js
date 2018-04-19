@@ -6,18 +6,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props)
-    // this.handleClick = this.handleClick.bind(this)
   }
-  // handleClick = () => {
-  //   axios.get('/v2/book/1220562').then((res) => {
-  //     console.log(res, 2)
-  //   })
-  //   fetch('/v2/book/1220562')
-  //     .then(function(res) {
-  //         return res.json()
-  //     })
-  //     .then(res => console.log(res, 3))
-  // }
   render() {
     return (
       <div className="App">
