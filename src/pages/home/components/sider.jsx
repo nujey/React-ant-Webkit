@@ -14,6 +14,11 @@ const SubMenuWorksList = [{
   key: 4,
   text: 'React解析'
 }]
+// 个人中心列表侧边栏数组
+const SubmenuUserList = [{
+  key: 6,
+  text: '我的世界'
+}]
 class Slider extends React.Component {
   state = {
     // 侧边栏展开还是收起
@@ -35,6 +40,9 @@ class Slider extends React.Component {
     const worksList = SubMenuWorksList.map((item) => 
       <MenuItem key={item.key}>{item.text}</MenuItem>
     )
+    const userList = SubmenuUserList.map((item) => 
+      <MenuItem key={item.key}>{item.text}</MenuItem>
+    )
     return(
       <div className="slider-box" style={{ width: 200 }}>
         <Button type="primary" size="small" onClick={this.handleCollapsed} style={{ marginBottom: 16 }}>
@@ -46,6 +54,7 @@ class Slider extends React.Component {
           checkedChildren="dark"
           unCheckedChildren="light"
           style={{ marginLeft: 10 }}
+          size="small"
         />
         <Menu
           defaultSelectedKeys={['1']}
@@ -57,9 +66,12 @@ class Slider extends React.Component {
             <Icon type="pie-chart" />
             <span>首页</span>
           </MenuItem>
-         <SubMenu key="2" title={<span><Icon type="mail" /><span>作品展示</span></span>}>
-          {worksList}
-         </SubMenu>
+          <SubMenu key="2" title={<span><Icon type="github" /><span>作品展示</span></span>}>
+            {worksList}
+          </SubMenu>
+          <SubMenu key="5" title={<span><i className="iconfont re-ant-user" style={{marginRight: 10}}></i>个人中心</span>}>
+            {userList}
+          </SubMenu>
         </Menu>
       </div>
     )

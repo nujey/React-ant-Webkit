@@ -1,4 +1,6 @@
-*{
+@import url('./iconfont.scss');
+
+* {
   margin: 0;
   padding: 0;
   /*防止点击闪烁*/
@@ -11,7 +13,7 @@
   font-weight: normal;
 }
 /*修复img默认位置和IE边框*/
-img{
+img {
   vertical-align: top;
   border:none;
 }
