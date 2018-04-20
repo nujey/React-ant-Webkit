@@ -53,7 +53,7 @@ class Slider extends React.Component {
           onChange={this.handleChangeTheme}
           checkedChildren="dark"
           unCheckedChildren="light"
-          style={{ marginLeft: 10 }}
+          style={{ marginLeft: 99 }}
           size="small"
         />
         <Menu
@@ -69,7 +69,7 @@ class Slider extends React.Component {
           <SubMenu key="2" title={<span><Icon type="github" /><span>作品展示</span></span>}>
             {worksList}
           </SubMenu>
-          <SubMenu key="5" title={<span><i className="iconfont re-ant-user" style={{marginRight: 10}}></i>个人中心</span>}>
+          <SubMenu key="5" title={<span><i className="iconfont re-ant-user" style={{marginRight: 10}}></i><span>{!this.state.collapsed ? '个人中心' : ''}</span></span>}>
             {userList}
           </SubMenu>
         </Menu>

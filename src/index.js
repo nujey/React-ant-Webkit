@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 
-import './style/base.css'
+import './style/base.scss'
 import 'antd/dist/antd.css'
 // FastClick.attach(document.body);
 
