@@ -48,14 +48,14 @@ class Slider extends React.Component {
         <Button type="primary" size="small" onClick={this.handleCollapsed} style={{ marginBottom: 16 }}>
           <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}></Icon>
         </Button>
-        <Switch
+        {/* <Switch
           checked={this.state.theme === 'dark'}
           onChange={this.handleChangeTheme}
           checkedChildren="dark"
           unCheckedChildren="light"
           style={{ marginLeft: 99 }}
           size="small"
-        />
+        /> */}
         <Menu
           defaultSelectedKeys={['1']}
           defaultOpenKeys={['sub1']}
