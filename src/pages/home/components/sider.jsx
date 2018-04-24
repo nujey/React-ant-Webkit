@@ -1,23 +1,28 @@
 import React from 'react'
 import { Menu, Icon, Button, Switch } from 'antd'
+import { Link } from 'react-router-dom'
 import MenuItem from 'antd/lib/menu/MenuItem';
 
 const SubMenu = Menu.SubMenu
 // 作品展示的侧边栏数组
 const SubMenuWorksList = [{
   key: 2,
-  text: '小程序项目'
+  text: '小程序项目',
+  toPage: '/drag-demo'
 }, {
   key: 3,
-  text: 'Vue解析'
+  text: 'Vue解析',
+  toPage: '/drag-demo'
 }, {
   key: 4,
-  text: 'React解析'
+  text: 'React解析',
+  toPage: '/drag-demo'
 }]
 // 个人中心列表侧边栏数组
 const SubmenuUserList = [{
   key: 6,
-  text: '我的世界'
+  text: '我的世界',
+  toPage: '/drag-demo'
 }]
 class Slider extends React.Component {
   state = {
@@ -36,9 +41,17 @@ class Slider extends React.Component {
       theme: value ? 'dark' : 'light'
     })
   }
+  handleSeclect = (val) => {
+    if(val.key === '2') {
+      console.log(this.props)
+      this.props.history.push('/drag-demo')
+    }
+  }
   render() {
     const worksList = SubMenuWorksList.map((item) => 
-      <MenuItem key={item.key}>{item.text}</MenuItem>
+      <MenuItem key={item.key}>
+        <Link to={item.toPage} onClick={this.handleSeclect}>{item.text}</Link>
+      </MenuItem>
     )
     const userList = SubmenuUserList.map((item) => 
       <MenuItem key={item.key}>{item.text}</MenuItem>

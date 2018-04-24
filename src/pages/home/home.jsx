@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Slider from "./components/sider";
 import Banner from "./components/banner";
 
@@ -12,9 +13,9 @@ class Home extends React.Component {
         <header className="home-header">
           {/* <a href="#" className="logo"></a>
           <p className="wel-title"></p> */}
-          <Banner />
+          {/* <Banner /> */}
         </header>
-        {/* <Slider /> */}
+        <Slider />
       </main>
     )
   }
