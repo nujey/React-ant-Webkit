@@ -1,9 +1,13 @@
 import React from 'react'
 import Swiper from 'swiper'
-import 'swiper.min.css'
+// import 'swiper.min.css'
 
 class Banner extends React.Component {
-
+  componentDidMount() {
+    new Swiper(this.$ref.banner, {
+      direction: 'horizontal'
+    })
+  }
   render() {
     return (
       <div className="banner-swiper">
