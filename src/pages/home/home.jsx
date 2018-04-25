@@ -11,9 +11,8 @@ class Home extends React.Component {
     return(
       <main className='home-main'>
         <header className="home-header">
-          {/* <a href="#" className="logo"></a>
-          <p className="wel-title"></p> */}
-          {/* <Banner /> */}
+          <a href="javascript:()" className="logo"></a>
+          行走在互联网世界的店铺之家
         </header>
         <Slider />
       </main>

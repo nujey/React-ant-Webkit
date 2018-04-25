@@ -4,7 +4,8 @@
   width: 100%;
   min-height: 100%;
   color: $font-color;
-  background: rgba($color: #001529, $alpha: 0.8);
+  // background: rgba($color: #090723, $alpha: 0.7);
+  background: rgba($color: #fafafb, $alpha: 0.7);
   position: relative;
   .logo {
     width: 64px;
@@ -13,7 +14,7 @@
     background-size: 100% 100%;
     position: absolute;
     left: 20px;
-    top: 10px;
+    top: 12px;
   }
   .wel-title {
     width: 100%;
@@ -26,21 +27,58 @@
   height: 88px;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   color: $font-color;
   font-size: 30px;
   margin: 0 auto;
-  padding-top: 24px;
   box-sizing: border-box;
+  letter-spacing: 4px;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #1a023e, #550046, #1a023e);
 }
 // 侧边栏的样式
-.slider-box {
-  min-width: 120px;
-  height: calc(100% - 88px);
+.slider-pro-list {
+  // min-width: 120px;
+  height: 100%;
   background: 'dark';
   color: $font-white;
-  // text-align: right;
-  padding: 10px 12px;
+  padding: 20px 24px;
+  .slider-li {
+    line-height: 60px;
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: 1px solid rgb(155, 150, 150);
+    transition: all .5s;
+    box-shadow: -2px 1px 2px rgb(133, 128, 128);
+    // background: rgba($color: #090723, $alpha: 1);
+    background: -webkit-linear-gradient(#1a023e, #550046, #1a023e);
+    border-radius: 20px;
+    &:hover {
+      padding: 0 30px;
+    }
+  }
+  & > li:nth-child(1) {
+    transform: rotateZ(15deg);
+    margin-bottom: 55px;
+  }
+  & > li:nth-child(2) {
+    transform: rotateZ(-15deg);
+    margin: 0 0 55px 20px;
+  }
+  & > li:nth-child(3) {
+    transform: rotateZ(15deg);
+    margin: 0 0 55px 0px;
+  }
+  & > li:nth-child(4) {
+    transform: rotateZ(-20deg);
+    margin: 0 0 55px 20px;
+  }
+  & > li:nth-child(5) {
+    transform: rotateZ(18deg);
+    margin: 0 0 55px 10px;
+  }
 }
 // 顶部banner轮播
 .banner-swiper {
