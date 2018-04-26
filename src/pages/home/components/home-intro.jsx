@@ -5,7 +5,10 @@ class HomeIntro extends React.Component {
     return (
       <div className="home-content">
         <div>
-          <h3 className="content-title">我们是谁？能做什么</h3>
+          <div className="content-title">
+            <span>我们是谁？能做什么</span>
+            <p className="content-line"></p>
+          </div>
           <p className="content-detail"><span className="logo-color">兮电之家</span>专门给店铺、公司、餐厅、休闲场等线上线下的店家提供专业制作网站的服务</p>
           <p className="content-detail">
             无论您是<strong className="content-red-color">线上：</strong>淘宝店铺、京东店铺、微信商家<br/>还是
@@ -21,7 +24,10 @@ class HomeIntro extends React.Component {
           <p className="content-detail"><span className="webkit-color">时尚简约微信小程序:</span>无论何时何地，只要您有网，只要打开微信，就可以让同学、同事、甚至陌生人扫一扫关注您的微信店铺，实时了解您的店铺信息</p>
         </div>
         <div>
-          <h3 className="content-title">能为您解决什么</h3>
+        <div className="content-title">
+            <span>小电能带给您</span>
+            <p className="content-line"></p>
+          </div>
           <p className="content-detail">还在用嘴巴和白纸来为自己的店打广告嘛？</p>
           <p className="content-detail">还在一遍遍的给客人口述你的美食、衣服、化妆品嘛？</p>
           <p className="content-detail">还在为了自己的写真没办法实时分享给好友而苦恼嘛？</p>
