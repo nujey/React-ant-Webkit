@@ -91,13 +91,18 @@
     text-align: center;
     perspective: 800px;
     position: relative;
-    &:after {
+    span {
+      padding: 0 20px;
+      background: rgba($color: #fafafb, $alpha: 0.9);
+    }
+    .content-line {
       position: absolute;
-      top: 0px;
-      right: 10px;
-      width: 40px;
-      height: 20px;
-      background: #f00;
+      top: 50%;
+      left: 5%;
+      width: 90%;
+      height: 1px;
+      background: rgba($color: #003463, $alpha: 0.5);
+      z-index: -1;
     }
   }
   .content-detail {
