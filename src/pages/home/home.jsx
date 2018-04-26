@@ -11,11 +11,17 @@ class Home extends React.Component {
     return(
       <main className='home-main clearfix'>
         <header className="home-header">
-          <a href="javascript:()" className="logo"></a>
-          行走在互联网世界的店铺之家
+          <span>兮电首页</span>
+          <span>商务案例</span>
+          <a className="logo">兮电之家</a>
+          <span>合作共赢</span>
+          <span>联系小电</span>  
         </header>
-        <Slider />
-        <HomeIntro />
+        <div className="clearfix">
+          <HomeIntro />
+        </div>
+        {/* <HomeIntro /> */}
+        <div className="home-footer">浙c 备案</div>
       </main>
     )
   }
