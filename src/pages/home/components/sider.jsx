@@ -1,9 +1,9 @@
 import React from 'react'
-import { Menu, Icon, Button, Switch } from 'antd'
+// import { Menu, Icon, Button, Switch } from 'antd'
 import { Link } from 'react-router-dom'
-import MenuItem from 'antd/lib/menu/MenuItem';
+// import MenuItem from 'antd/lib/menu/MenuItem';
 
-const SubMenu = Menu.SubMenu
+// const SubMenu = Menu.SubMenu
 // 作品展示的侧边栏数组
 const SubMenuList = [{
   key: 1,
@@ -27,11 +27,11 @@ const SubMenuList = [{
   toPage: '/home'
 }]
 // 个人中心列表侧边栏数组
-const SubmenuUserList = [{
-  key: 6,
-  text: '我的世界',
-  toPage: '/drag-demo'
-}]
+// const SubmenuUserList = [{
+//   key: 6,
+//   text: '我的世界',
+//   toPage: '/drag-demo'
+// }]
 class Slider extends React.Component {
   state = {
     // 侧边栏展开还是收起
