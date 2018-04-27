@@ -2,6 +2,7 @@ import React from 'react'
 
 import Slider from "./components/sider";
 import HomeIntro from "./components/home-intro";
+import Banner from './components/banner'
 
 // import { saveFormData } from '../../store/home/action'
 import './home.scss'
@@ -17,7 +18,10 @@ class Home extends React.Component {
           <span>合作共赢</span>
           <span>联系小电</span>  
         </header>
-        <div className="clearfix">
+        <div>
+          <Banner />
+        </div>
+        <div className="home-intro clearfix">
           <HomeIntro />
         </div>
         {/* <HomeIntro /> */}

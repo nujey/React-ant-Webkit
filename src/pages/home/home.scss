@@ -49,10 +49,7 @@
     border: 1px solid rgb(155, 150, 150);
     transition: all .5s;
     box-shadow: -2px 1px 2px rgb(133, 128, 128);
-    // color: #a692a9;
     color: #333;
-    // background: rgba($color: #090723, $alpha: 1);
-    // background: -webkit-linear-gradient( left, #6abeea, #a692a9, #6abeea);
     border-radius: 20px;
     &:hover {
       padding: 0 30px;
@@ -77,38 +74,6 @@
   & > li:nth-child(5) {
     transform: rotateZ(18deg);
     margin: 0 0 55px 10px;
-  }
-}
-// 内容
-.home-content {
-  width: 100%;
-  padding: 20px 10px;
-  color: #333;
-  float: left;
-  .content-title {
-    font-size: 24px;
-    line-height: 50px;
-    text-align: center;
-    perspective: 800px;
-    position: relative;
-    span {
-      padding: 0 20px;
-      background: rgba($color: #fafafb, $alpha: 0.9);
-    }
-    .content-line {
-      position: absolute;
-      top: 50%;
-      left: 5%;
-      width: 90%;
-      height: 1px;
-      background: rgba($color: #003463, $alpha: 0.5);
-      z-index: -1;
-    }
-  }
-  .content-detail {
-    font-size: 24px;
-    line-height: 30px;
-    margin: 5px 0;
   }
 }
 .home-footer {

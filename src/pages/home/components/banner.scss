@@ -1,0 +1,58 @@
+.banner-swiper {
+  display: flex;
+  justify-content: center;
+  .home-banner-list {
+    text-align: center;
+    padding-top: 20px;
+    .banner-li {
+      width: 385px;
+      height: 385px;
+      position: relative;
+      display: inline-block;
+      border: 1px solid transparent;
+      transition: all 1s;
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .banner-meng {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba($color: #000000, $alpha: 0.3);
+        color: #fff;
+        display: block;
+        i {
+          font-size: 60px;
+          color: #fff;
+          margin: 0 0 100px 0;
+          display: inline-block;
+          animation: rotate-icon 5s linear infinite;
+          cursor: pointer;
+        }
+        .banner-label {
+          font-size: 28px;
+          margin: 80px 0 30px 0;
+        }
+        .banner-decription {
+          font-size: 16px;
+          text-align: right;
+          padding: 0 10px;
+        }
+      }
+    }
+    & > li:nth-child(2) {
+      margin: 0 30px;
+    }
+  }
+}
+// 动画库
+@keyframes rotate-icon {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
