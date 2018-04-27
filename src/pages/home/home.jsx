@@ -24,8 +24,6 @@ class Home extends React.Component {
         <div className="home-intro clearfix">
           <HomeIntro />
         </div>
-        {/* <HomeIntro /> */}
-        <div className="home-footer">浙c 备案</div>
       </main>
     )
   }
