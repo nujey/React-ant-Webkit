@@ -1,0 +1,85 @@
+.home-desc-one {
+  width: 85%;
+  height: 700px;
+  margin: 0 auto 40px;
+  background: url('../../../assets/images/decbg1.jpg') no-repeat 100% 100%;
+  background-size: 100% 100%;
+  position: relative;
+}
+.home-desc-two {
+  width: 85%;
+  height: 500px;
+  margin: 0 auto 40px;
+  background: url('../../../assets/images/decbg2.jpg') no-repeat 100% 100%;
+  background-size: 100% 100%;
+  position: relative;
+}
+.dec-meng {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba($color: #ebebe0, $alpha: 0.5);
+  color: #333;
+}
+// 内容
+.home-content {
+  width: 100%;
+  padding: 20px 10px;
+  float: left;
+  .content-title {
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    perspective: 800px;
+    position: relative;
+    color: #333;
+    span {
+      padding: 0 20px;
+      background: rgba($color: #fafafb, $alpha: 0.9);
+      border-radius: 20px;
+    }
+    .content-line {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      width: 90%;
+      height: 1px;
+      background: rgba($color: #003463, $alpha: 0.5);
+      z-index: -1;
+    }
+  }
+  .content-detail {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 16px 0;
+    padding: 0 20px;
+  }
+}
+.home-bottom-qrcode {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  div:nth-child(2)  {
+    margin-left: 40px;
+    margin-right: 300px;
+  }
+  p {
+    padding: 10px 0;
+  }
+  .qrcode-img {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+  }
+  .home-bottom-list {
+    padding-top: 140px;
+    li {
+      text-align: left;
+      line-height: 25px;
+      color: #999;
+    }
+  }
+}

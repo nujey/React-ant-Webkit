@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 357986 */
-  src: url('//at.alicdn.com/t/font_9v7nlb7zkiqz1tt9.eot');
-  src: url('//at.alicdn.com/t/font_9v7nlb7zkiqz1tt9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_9v7nlb7zkiqz1tt9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_9v7nlb7zkiqz1tt9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_9v7nlb7zkiqz1tt9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_357986_i6mvelsv2uunxw29.eot');
+  src: url('//at.alicdn.com/t/font_357986_i6mvelsv2uunxw29.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_357986_i6mvelsv2uunxw29.woff') format('woff'),
+  url('//at.alicdn.com/t/font_357986_i6mvelsv2uunxw29.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_357986_i6mvelsv2uunxw29.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -15,6 +15,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.re-ant-user:before {
+.xd-ant-user:before {
   content: '\e600'
+}
+.xd-banner-add:before {
+  content: '\e60e'
+}
+.xd-shandian:before {
+  content: '\e615'
+}
+.xd-fengche:before {
+  content: '\e611'
 }

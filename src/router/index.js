@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import home from '../pages/home/home'
-import dragDemo from '../pages/animation-demo/drag-demo/drag-demo'
+import coopera from '../pages/cooperation/coopera'
 
 export default class RouteConfig extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class RouteConfig extends Component {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component = {home} />
-          <Route path="/drag-demo" component = {dragDemo} />
+          <Route path="/coopera" component = {coopera} />
           <Redirect to="/" />
         </Switch>  
       </BrowserRouter>
