@@ -4,6 +4,53 @@
   width: 85%;
   line-height: 28px;
   font-size: 24px;
-  // color: #fff;
-  // background: rgba($color: #000000, $alpha: 1.0)
+}
+.list-box {
+  width: 85%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  .list {
+    li {
+      border: 1px solid #ccc;
+      border-bottom: none;
+      display: flex;
+      align-items: center;
+    }
+    li:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+    li > span {
+      height: 100%;
+      padding: 0 15px;
+      line-height: 28px;
+      display: inline-block;
+    }
+    span:nth-child(1) {
+      width: 20%;
+    }
+    span:nth-child(2) {
+      width: 50%;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+    span:nth-child(3) {
+      width: 10%;
+    }
+    span:nth-child(4) {
+      width: 10%;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+    span:nth-child(5) {
+      width: 10%;
+    }
+  }
+  .list-title > li > span{
+    font-weight: 500;
+    height: 28px;
+    line-height: 28px;
+  }
+  .empty-list {
+    text-align: center;
+  }
 }
