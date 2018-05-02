@@ -10,14 +10,14 @@ class Coopera extends React.Component {
     strHtml: ''
   }
   handleTyping = () => {
-    console.log(cooperaList)
+    let timer = null
     const arr = []
     let num = 0
     for(let i = 0; i < biteStr.length; i++) {
       arr.push(biteStr[i])
     }
     let html = ''
-    const timer = setInterval(() => {
+    timer = setInterval(() => {
       if (num < arr.length) {
         html += arr[num]
         this.setState({
@@ -30,6 +30,15 @@ class Coopera extends React.Component {
     }, 100)
   }
   render() {
+    const listContentHtml = cooperaList.lists.map((item) => {
+      return <li key={item.pid}>
+        <span>{item.name}</span>
+        <span>{item.desc}</span>
+        <span>{item.pid < 100 && item.mealA ? 'X' : item.pid > 100 && item.mealA  ? item.mealA : 'V'}</span>
+        <span>{item.pid < 100 && item.mealB ? 'X' : item.pid > 100 && item.mealB  ? item.mealB : 'V'}</span>
+        <span>{item.pid < 100 && item.mealC ? 'X' : item.pid > 100 && item.mealC  ? item.mealC : 'V'}</span>
+      </li>
+    })
     return (
       <div>
         <header className="home-header">
@@ -43,6 +52,22 @@ class Coopera extends React.Component {
         <p className="coopera">
           {this.state.strHtml}
         </p> 
+        <div className="list-box">
+          <ol className="list list-title">
+            <li>
+              <span>商品名称</span>
+              <span>商品描述</span>
+              <span>套餐A</span>
+              <span>套餐B</span>
+              <span>套餐C</span>
+            </li>
+          </ol>
+            {
+              cooperaList.lists.length ? <ul className="list list-content">
+              {listContentHtml}
+              </ul> : <p className="empty-list">暂无数据</p>
+            }
+        </div>
       </div>
     )
   }
