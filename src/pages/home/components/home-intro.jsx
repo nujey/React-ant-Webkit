@@ -1,7 +1,6 @@
 import React from 'react'
 import DecbgTwo from '../../../assets/images/decbg2.jpg'
-import Qrcode from '../../../assets/images/qrcode.jpg'
-import Qq from '../../../assets/images/qq.jpg'
+
 
 import './home-intro.scss'
 
@@ -44,22 +43,6 @@ class HomeIntro extends React.Component {
             <p className="content-detail">拥有<span className="logo-color">兮电之家</span>，一个网站链接，轻松宣传自己的店铺产品、点击产品图片随时冲进线上商铺买！买！买！</p>
             <p className="content-detail">拥有<span className="logo-color">兮电之家</span>，小小二维码，分秒代替数以千计张的宣传大字报、传单，环保！便捷！价廉！</p>
             <p className="content-detail">拥有<span className="logo-color">兮电之家</span>，小小二维码，您再也不用到处发传单、再也不用很多大学生每天发传单！</p>
-          </div>
-        </div>
-        <div className="home-bottom-qrcode">
-          <div>
-            <p>微信扫一扫联系小电</p>
-            <img src={Qrcode} alt="" className="qrcode-img"/>
-          </div>
-          <div>
-            <p>QQ联系专业客服哦</p>
-            <img src={Qq} alt="" className="qrcode-img"/>
-          </div>
-          <div>
-            <ul className="home-bottom-list">
-              <li>© timih5 兮电 2018-2024. All Rights Reserved.</li>
-              <li>浙ICP备1234567号</li>
-            </ul>
           </div>
         </div>
       </div>
