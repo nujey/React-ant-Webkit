@@ -7,7 +7,7 @@
 }
 .list-box {
   width: 85%;
-  margin: 0 auto;
+  margin: 20px auto;
   box-sizing: border-box;
   .list {
     li {
@@ -15,6 +15,11 @@
       border-bottom: none;
       display: flex;
       align-items: center;
+      transition: all .5s;
+    }
+    li:hover {
+      color: #fff;
+      background: rgba(0, 0, 0, .5)
     }
     li:last-child {
       border-bottom: 1px solid #ccc;
