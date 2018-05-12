@@ -14,7 +14,7 @@ class Home extends React.Component {
   render() {
     return(
       <main className='home-main clearfix'>
-        <Header />
+        <Header anchorName="anchor"/>
         <div>
           <Banner />
         </div>
@@ -22,6 +22,7 @@ class Home extends React.Component {
           <HomeIntro />
         </div>
         <Footer />
+        <a id="anchor"></a>
       </main>
     )
   }

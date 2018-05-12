@@ -4,6 +4,15 @@ import './header.scss';
 
 
 class Header extends React.Component {
+  scrollToAnchor = (anchor) => {
+    let anchorName = this.props.anchorName;
+    if (anchorName) {
+      let anchorNameElement = document.getElementById(anchorName);
+      anchorNameElement.scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+  }
   render() {
     return(
       <header className="home-header">
@@ -12,7 +21,7 @@ class Header extends React.Component {
         <a className="logo"><i className="iconfont xd-shandian"></i></a>
         <Link to="/coopera" className="nav-to-menu"><span>合作共赢</span></Link>
         {/* <span>合作共赢</span> */}
-        <span>联系小电</span>  
+        <span onClick={this.scrollToAnchor}>联系小电</span>
       </header>
     )
   }

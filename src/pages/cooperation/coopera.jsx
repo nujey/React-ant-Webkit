@@ -46,7 +46,7 @@ class Coopera extends React.Component {
     })
     return (
       <div>
-        <Header />
+        <Header anchorName="anchor"/>
         <p className="coopera">
           {this.state.strHtml}
         </p> 
@@ -66,6 +66,7 @@ class Coopera extends React.Component {
               </ul> : <p className="empty-list">暂无数据</p>
             }
         </div>
+        <a id="anchor"></a>
         <Footer />
       </div>
     )
