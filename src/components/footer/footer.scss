@@ -1,0 +1,33 @@
+.home-footer {
+  width: 100%;
+  display: inline-block;
+  padding: 5px 0;
+  text-align: center;
+}
+.home-bottom-qrcode {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 15px;
+  div:nth-child(2)  {
+    margin-left: 40px;
+    margin-right: 300px;
+  }
+  p {
+    padding: 10px 0;
+  }
+  .qrcode-img {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+  }
+  .home-bottom-list {
+    padding-top: 140px;
+    li {
+      text-align: left;
+      line-height: 25px;
+      color: #999;
+    }
+  }
+}
